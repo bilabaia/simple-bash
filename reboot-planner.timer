@@ -1,0 +1,9 @@
+[Unit]
+Description=Starts reboot-planner daemon after set amount of runtime
+
+[Timer]
+OnBootSec=5d
+Unit=reboot-planner.service
+
+[Install]
+WantedBy=multi-user.target

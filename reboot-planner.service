@@ -1,0 +1,10 @@
+[Unit]
+Description=Automated reboot planner based on runtime
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/reboot-planner.sh
+TimeoutStoppSec=20
+
+[Install]
+WantedBy=multi-user.target
